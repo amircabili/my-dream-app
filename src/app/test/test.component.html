@@ -1,0 +1,52 @@
+<h4><a href="#">test works!  888888</a></h4>
+
+
+            
+<main role="main">
+    <section class="jumbotron text-center">
+
+                <h2>test.component.html111111</h2>
+
+                <div> </div>
+                
+                      <div class="container box-shadow" *ngIf=displayName;  else elseBlock>
+                        <h2 > thenBlock !!!!</h2>
+                        <input #myInput type="text" >  
+                        <button (click)="logMessage(myInput)">Log </button>
+                        <br><br> 
+                        <h2> Welcome Home {{name}} </h2>
+                        <h2 class="text-danger"> {{"2+2"}}</h2>
+                        <h2 class="text-danger"> {{"Welcome" + name}}</h2>
+                        <h2 [class]="successClass" class="text-danger"> {{name.length}}</h2>
+                        <h2> {{name.toUpperCase()}}</h2>
+                        <h2> {{ greetUser() }}</h2>
+                      </div>
+
+                      <br><br>  <br><br>  
+
+                      <div class="container box-shadow" #elseBlock >
+                        <h2 > elseBlock !!!!</h2>               
+                        <h2 [class.text-danger]="hasError"> {{ siteUrl  }}</h2>
+                        <h1 [ngClass]="messageClasses">CodeVolution !!!</h1>
+                        <br><br><br>
+                        <button (click)="onClick($event);" class="btn btn-sm btn-outline-secondary">button</button> - 
+                        <button (click)="greeting='Welcome visuazz 111'" class="btn btn-sm btn-outline-secondary">button</button> -
+                        <span>{{greeting}}</span>
+                        <br><br>
+                        <input [id]="myId" type="text" value="Vishuaz">  - 
+                        <input bind-disabled="isDisabled" id="{{myId}}" type="text" value="Vishuaz">
+                      </div>
+        </section>
+      </main>
+
+      <footer class="text-muted bg-primary">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+        <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+      </div>
+    </footer>
+
+    
